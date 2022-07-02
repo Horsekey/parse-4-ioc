@@ -16,3 +16,9 @@ ThreatFox is a free platform from abuse.ch with the goal of sharing indicators o
 A Fast and Reliable service that enables you to extract IOCs and intelligence from different data sources.
 
 > https://docs.iocparser.com/api-reference/parse-api
+
+
+
+Possible?
+https://developers.virustotal.com/reference/public-vs-premium-api
+https://cinsscore.com/
