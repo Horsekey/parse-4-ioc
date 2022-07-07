@@ -1,0 +1,20 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	dhcp
+#open	2022-07-06-17-17-30
+#fields	ts	uids	client_addr	server_addr	mac	host_name	client_fqdn	domain	requested_addr	assigned_addr	lease_time	client_message	server_message	msg_types	duration
+#types	time	set[string]	addr	addr	string	string	string	string	addr	addr	interval	string	string	vector[string]	interval
+1657142232.596620	Ch0O3h3EnWKh3bdmQ7	-	-	38:00:25:4d:c0:a1	Reed-Laptop	Reed-Laptop	-	192.168.11.223	-	-	-	-	REQUEST	0.000000
+1657142241.142312	Ch0O3h3EnWKh3bdmQ7	-	-	a0:6a:44:ef:72:c1	-	-	-	192.168.11.57	-	-	-	-	DISCOVER,REQUEST	0.000003
+1657142272.770341	Ch0O3h3EnWKh3bdmQ7	-	-	a0:6a:44:ef:72:c1	-	-	-	-	-	-	-	-	DISCOVER	0.000000
+1657142285.939166	Ch0O3h3EnWKh3bdmQ7	-	-	a0:6a:44:ef:72:c1	-	-	-	192.168.11.57	-	-	-	-	DISCOVER,REQUEST	0.011685
+1657142399.165325	CzdQHG1YVBX5YkPmW2	-	-	a0:6a:44:ef:72:c1	-	-	-	192.168.11.57	-	-	-	-	DISCOVER,DISCOVER,REQUEST	6.039103
+1657142630.669179	CLGRUB3vP3Ei4b38fe	-	-	a0:6a:44:ef:72:c1	-	-	-	-	-	-	-	-	DISCOVER	0.000000
+1657142674.616361	CLGRUB3vP3Ei4b38fe	-	-	a0:6a:44:ef:72:c1	-	-	-	192.168.11.57	-	-	-	-	REQUEST,REQUEST,REQUEST	6.625441
+1657142681.917687	CLGRUB3vP3Ei4b38fe	-	-	a0:6a:44:ef:72:c1	-	-	-	192.168.11.57	-	-	-	-	REQUEST	0.000000
+1657142743.697375	C8lWp44SzAcRqBqnr8	-	-	a0:6a:44:ef:72:c1	-	-	-	-	-	-	-	-	DISCOVER,DISCOVER	1.879435
+1657142750.184811	C8lWp44SzAcRqBqnr8	-	-	a0:6a:44:ef:72:c1	-	-	-	192.168.11.57	-	-	-	-	DISCOVER,DISCOVER,REQUEST,REQUEST	6.131226
+1657142760.470877	C8lWp44SzAcRqBqnr8	-	-	a0:6a:44:ef:72:c1	-	-	-	192.168.11.57	-	-	-	-	REQUEST	0.000000
+1657143195.219993	CG3vexrtcn8I5a9n9	-	-	a0:6a:44:ef:72:c1	-	-	-	-	-	-	-	-	DISCOVER	0.000000
