@@ -1,0 +1,13 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	dpd
+#open	2022-07-17-22-48-44
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	analyzer	failure_reason
+#types	time	string	addr	port	addr	port	enum	string	string
+1656433182.846752	CGDCou3uwWSnLCAgqc	10.6.21.140	56307	10.6.21.10	49666	tcp	GSSAPI	Binpac exception: binpac exception: out_of_bound: ASN1EncodingMeta:more_len: 129 > 74
+1656434539.261511	CrjTRThFzxX0IpD21	10.6.21.10	57144	10.6.21.140	135	tcp	GSSAPI	Binpac exception: binpac exception: out_of_bound: ASN1EncodingMeta:more_len: 129 > 26
+1656434539.509768	CjaGJv01QEgyy2bw6	10.6.21.10	57145	10.6.21.140	56321	tcp	GSSAPI	Binpac exception: binpac exception: out_of_bound: ASN1EncodingMeta:more_len: 129 > 26
+1656434938.545126	CtVIA515QOyW79BlK7	10.6.21.140	56535	10.6.21.10	49666	tcp	GSSAPI	Binpac exception: binpac exception: out_of_bound: ASN1EncodingMeta:more_len: 129 > 74
+#close	2022-07-17-22-48-45

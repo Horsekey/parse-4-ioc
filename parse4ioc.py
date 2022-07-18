@@ -5,6 +5,7 @@ import requests
 import sys
 import csv
 import socket
+import argparse
 
 
 #input zeek log location,
@@ -15,16 +16,31 @@ import socket
 #
 #query APIs
 
+#python3 parse4ioc.py -h [help] -p [path of log files] -t [type of ioc to parse (supported: IPs, DNS, PE files)]
 
-def normalizeIPS(fileLocation):
-  files = [fileLocation]
 
-  # NEED TO LOOP THROUGH THE FILES AND ADD TO FILE JUST TEMP
+parser = argparse.ArgumentParser(description="This is a test description")
 
+parser.add_argument("--path", 
+  "-p", 
+  default=os.getcwd(), 
+  help="Path to your zeek log files (default: current working directory)"
+)
+
+parser.add_argument("--type", 
+  "-t", 
+  default="A", 
+  help="Type of IOC to parse. Options: [I]Ps, [H]ashes, [U]RLs, [A]ll (default: all)"
+)
+
+def normalizeIPS(args):
   unique_values = []
 
-  with open('conn.log','r') as infile:
-    ips = [ cols[2:3] for cols in csv.reader(infile, delimiter="\t") ]
+  with open(args.path + '\\' + 'conn.log','r') as infile:
+    response_ips = [ cols[4:5] for cols in csv.reader(infile, delimiter="\t") ]
+    origin_ips = [ cols[2:3] for cols in csv.reader(infile, delimiter="\t") ]
+
+    ips = response_ips + origin_ips
 
     for i in ips:
       try:
@@ -35,11 +51,10 @@ def normalizeIPS(fileLocation):
         continue
   return unique_values
 
-def normalizeHash():
+def normalizeHash(args):
   print("test")
 
-def main(ips):
-
+def queryAPI(ips):
   url = "https://threatfox-api.abuse.ch/api/v1/"
   for ip in ips:
     #print(''.join(ip))
@@ -51,9 +66,15 @@ def main(ips):
     if "no_result" in response.text:
       print("NO RESULT")
     else:
+      print(ip)
       print("RESULT")
       print(response.json())
 
-if __name__ == '__main__':
-  main(normalizeIPS())
+def main(args):
 
+  if args.type == "A":
+    queryAPI(normalizeIPS(parser.parse_args()))
+    
+
+if __name__ == '__main__':
+  main(parser.parse_args())

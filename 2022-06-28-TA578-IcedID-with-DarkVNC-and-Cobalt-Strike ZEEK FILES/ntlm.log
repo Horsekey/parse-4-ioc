@@ -1,0 +1,15 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	ntlm
+#open	2022-07-17-22-48-44
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	username	hostname	domainname	server_nb_computer_name	server_dns_computer_name	server_tree_name	success
+#types	time	string	addr	port	addr	port	string	string	string	string	string	string	bool
+1656434483.967984	CgPf8P3ztFmNrI6Nya	10.6.21.10	57135	10.6.21.140	445	Administrator	TECHHIGHWAY-DC	TECHHIGHWAY	DESKTOP-4GDQQL7	DESKTOP-4GDQQL7.techhighway.com	techhighway.com	T
+1656434539.523044	CjaGJv01QEgyy2bw6	10.6.21.10	57145	10.6.21.140	56321	Administrator	TECHHIGHWAY-DC	TECHHIGHWAY	DESKTOP-4GDQQL7	DESKTOP-4GDQQL7.techhighway.com	techhighway.com	-
+1656434768.568548	CLu2843vYra9Heo7Y1	10.6.21.140	56395	10.6.21.10	49666	-	DESKTOP-4GDQQL7	-	TECHHIGHWAY-DC	TECHHIGHWAY-DC.techhighway.com	techhighway.com	-
+1656434830.780466	Cf7yrI1xShNaqFMGO5	10.6.21.140	56449	10.6.21.10	445	-	DESKTOP-4GDQQL7	-	TECHHIGHWAY-DC	TECHHIGHWAY-DC.techhighway.com	techhighway.com	T
+1656434925.223157	CTP76a4ibS5SfQpSnc	10.6.21.140	56524	10.6.21.10	49666	-	DESKTOP-4GDQQL7	-	TECHHIGHWAY-DC	TECHHIGHWAY-DC.techhighway.com	techhighway.com	-
+1656435227.054869	C45vs1rrtAKPrpjLl	10.6.21.140	56754	10.6.21.10	445	DESKTOP-4GDQQL7$	DESKTOP-4GDQQL7	TECHHIGHWAY	TECHHIGHWAY-DC	TECHHIGHWAY-DC.techhighway.com	techhighway.com	T
+#close	2022-07-17-22-48-45

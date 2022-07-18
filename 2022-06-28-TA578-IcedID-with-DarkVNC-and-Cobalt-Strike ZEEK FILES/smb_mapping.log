@@ -1,0 +1,16 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	smb_mapping
+#open	2022-07-17-22-48-44
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	path	service	native_file_system	share_type
+#types	time	string	addr	port	addr	port	string	string	string	string
+1656433558.382916	CfIEwbZ4CJI45EEDf	10.6.21.140	56314	10.6.21.10	445	\\\\TECHHIGHWAY-DC.techhighway.com\\IPC$	-	-	PIPE
+1656434458.383338	Cl40o22R0PdZUtJqQ6	10.6.21.140	56318	10.6.21.10	445	\\\\TECHHIGHWAY-DC.techhighway.com\\IPC$	-	-	PIPE
+1656434483.985302	CgPf8P3ztFmNrI6Nya	10.6.21.10	57135	10.6.21.140	445	\\\\10.6.21.140\\IPC$	-	-	PIPE
+1656434483.988732	CgPf8P3ztFmNrI6Nya	10.6.21.10	57135	10.6.21.140	445	\\\\10.6.21.140\\c$	-	-	DISK
+1656434830.783819	Cf7yrI1xShNaqFMGO5	10.6.21.140	56449	10.6.21.10	445	\\\\10.6.21.10\\IPC$	-	-	PIPE
+1656435227.089108	C45vs1rrtAKPrpjLl	10.6.21.140	56754	10.6.21.10	445	\\\\10.6.21.10\\IPC$	-	-	PIPE
+1656435358.378232	CojCeH1XzUIwrkf007	10.6.21.140	56850	10.6.21.10	445	\\\\TECHHIGHWAY-DC.techhighway.com\\IPC$	-	-	PIPE
+#close	2022-07-17-22-48-45
