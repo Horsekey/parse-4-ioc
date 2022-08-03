@@ -27,7 +27,10 @@ A Fast and Reliable service that enables you to extract IOCs and intelligence fr
 
 
 
-### Possible additions
+## Possible additions
 
->https://developers.virustotal.com/reference/public-vs-premium-api
->https://cinsscore.com/
+> https://developers.virustotal.com/reference/public-vs-premium-api
+> https://cinsscore.com/
+
+### JSON Visualization
+> https://shiny.rstudio.com/py/index.html
